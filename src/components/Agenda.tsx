@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const AlternatingContent = () => {
+const Agenda = () => {
   const agendaItems = [
     {
       time: "09:30 AM",
@@ -73,30 +73,31 @@ const AlternatingContent = () => {
   ];
 
   return (
-    <div id="agenda" className="bg-gradient-to-br from-gray-800 to-blue-500 mx-auto p-30 space-y-4">
+    <div id="agenda" className="bg-gradient-to-br from-gray-800 to-blue-500 mx-auto p-8 space-y-8">
       <div className="text-center">
         <motion.h2
           className="text-4xl font-light text-white text-center mb-12"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.3 }} 
+          viewport={{ once: false, amount: 0.3 }}
         >
           <h2 className="text-4xl font-semibold">Agenda</h2>
         </motion.h2>
       </div>
+
       {agendaItems.map((item, index) => (
         <motion.div
           key={index}
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.1 }}
           viewport={{ once: false, amount: 0.3 }} // Trigger when 30% of element is in view
         >
           <div
-            className={`bg-blue-100 p-6 rounded-lg shadow-md  ${
-              index % 2 === 0 ? "md:col-start-1" : "md:col-start-2 md:col-end-3"
+            className={`bg-blue-100 p-6 rounded-lg shadow-md ${
+              index % 2 === 0 ? "sm:col-start-1" : "sm:col-start-2 sm:col-end-3"
             }`}
           >
             <h3 className="text-xl font-bold mb-2">
@@ -110,4 +111,4 @@ const AlternatingContent = () => {
   );
 };
 
-export default AlternatingContent;
+export default Agenda;

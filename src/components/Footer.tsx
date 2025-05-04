@@ -8,7 +8,7 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-black text-white px-8 py-12 text-sm">
-      <div className="max-w-7xl mx-auto ml-100 grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-12">
         {/* Left Column */}
         <div>
           <h2 className="text-lg font-semibold mb-2">Cogent Solutions™</h2>
@@ -43,11 +43,9 @@ export default function Footer() {
         </div>
 
         {/* Right Column */}
-
         <div className="p-4">
           <h2 className="text-lg font-semibold mb-4">Our office</h2>
-
-          <div className="grid grid-cols-2 gap-80">
+          <div className="grid lg:gap-100 sm:grid-cols-1 md:grid-cols-2 gap-10">
             <div className="w-[300px] p-4 rounded-lg shadow">
               <ul className="space-y-2">
                 <li>

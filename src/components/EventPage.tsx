@@ -4,7 +4,7 @@ export const EventPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-800 to-grey-900 text-white pt-22">
       {/* Main Content */}
-      <div className="flex flex-col md:flex-row items-center justify-between px-6 py-12 md:py-24 max-w-7xl mx-auto -space-y-25 md:space-y-0 md:space-x-12">
+      <div className=" flex flex-col md:flex-row items-center justify-between px-6 py-6 md:py-24 max-w-7xl mx-auto space-y-6 md:space-y-0 md:space-x-12">
         {/* Text Content */}
         <div className="text-center md:w-1/2 mt-10">
           <p className="text-sm text-gray-300 font-bold mb-2">Organized By</p>
