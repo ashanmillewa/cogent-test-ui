@@ -10,7 +10,7 @@ export const NavBar = () => {
       <div className="flex justify-between items-center px-6 py-4 max-w-screen-xl mx-auto">
         {/* Logo */}
         <img
-          src="../../public/cogentLogo.png"
+          src="/public/cogentLogo.png"
           alt="Cogent Solutions Logo"
           className="h-12"
         />
