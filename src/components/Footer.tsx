@@ -20,12 +20,12 @@ export default function Footer() {
           <h3 className="text-base font-semibold mb-2">Awards</h3>
           <div className="flex gap-2 flex-wrap">
             <img
-              src="/public/f1.png"
+              src="../../public/f1.png"
               alt="Award 1"
               className="h-16"
             />
             <img
-              src="/src/assets/footer/f2.png"
+              src="../../public/assets/footer/f2.png"
               alt="Award 2"
               className="h-16"
             />
