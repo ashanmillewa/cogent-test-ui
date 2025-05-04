@@ -11,7 +11,7 @@ export const NavBar = () => {
         {/* Logo */}
         <img
           src="/public/cogentLogo.png"
-          alt="Cogent Solutions Logo"
+          alt="Cogent Solutions Logo image"
           className="h-12"
         />
 
